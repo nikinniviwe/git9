@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb}
+
+\title{Reeksamen 2015 Opgave 2 (DM549)}
+\author{Shane Rio Phil Balancio Madsen}
+\date{November 2024}
+
+\begin{document}
+
+\maketitle
+
+\section*{Opgave 2}
+
+\subsection*{a) Hvilke af følgende udsagn er sande?}
+
+\begin{enumerate}
+    \item \( \forall x \in \mathbb{N}: \exists y \in \mathbb{N}: x < y \)
+    \item \( \forall x \in \mathbb{N}: \exists! y \in \mathbb{N}: x < y \)
+    \item \( \exists y \in \mathbb{N}: \forall x \in \mathbb{N}: x < y \)
+\end{enumerate}
+
+\subsubsection*{Løsning a)}
+
+Lad os analysere hvert udsagn:
+
+\begin{enumerate}
+   \item I den første påstand, bliver der påstået at for enhver naturlig \(x\), vil man kunne finde et naturligt tal \(y\), sådan at \(x<y\). Påstanden er sand, fordi for enhver naturlig tal \(x\), kan vi vælge \(y = x + 1\), som altid vil være et naturligt tal og opfylde \(x < y\). Derfor er udsagnet sandt.
+   
+    \item Den anden påstand, påstår, at for enhver naturlig \(x\), findes der et entydigt \(y\), så det vil sige at \(x<y\). Påstanden er falsk, da det ikke er et krav, at \(y\) skal være entydigt. For eksempel, for \(x = 1\), kan både \(y = 2\) og \(y = 3\) være løsninger. Derfor er påstanden ikke sand.
+    
+   	
+    \item Den tredje påstand siger, at der findes et \(y\), sådan at for alle naturlige \(x\), gælder \(x < y\). Det er også en falsk påstand, fordi der ikke findes et ”sådant \(y\) ”, der er større end alle naturlige tal. Naturlige tal er uendelige, og derfor kan vi ikke finde et \(y\), der er større end alle \(x\). Derfor er påstanden falsk.
+
+\end{enumerate}
+
+Så den eneste sande påstand er den første.
+
+\subsection*{b) Angiv negeringen af udsagn 1 fra spørgsmål a)}
+
+Negeringen af udsagn 1 betyder, at vi skal negere udsagnet \( \forall x \in \mathbb{N}: \exists y \in \mathbb{N}: x < y \). For at negere dette udsagn, kan vi bruge De Morgan's love:
+
+\[
+\neg (\forall x \in \mathbb{N}: \exists y \in \mathbb{N}: x < y) \equiv \exists x \in \mathbb{N}: \forall y \in \mathbb{N}: x \geq y
+\]
+
+Så det betyder, at der findes et naturligt tal \(x\), som er større end eller lig med alle naturlige tal \(y\). Dog er det ikke muligt, da de naturlige tal er uendelige og ikke har et maksimum. Derfor er negationen af udsagnet et umuligt udsagn.
+
+\end{document}
