@@ -1,0 +1,97 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb}
+\usepackage{setspace}
+
+\title{Reeksamen 2015 Opgave 2 og 3 (DM549)}
+\author{Shane Rio Phil Balancio Madsen, Sidra Hamad og Muzhda Alizai}
+\date{November 2024}
+
+\begin{document}
+
+\setlength{\parskip}{0.8em} % Øger afstanden mellem afsnit 
+\setlength{\parindent}{0pt} % Fjerner indrykninger ved begyndelsen af et afsnit
+\onehalfspacing % Øger linjeafstanden en smule, men ikke dobbelt
+
+\section*{Opgave 3}
+
+\vspace{0.4 em} % Tilføjer mellemrum
+
+\subsection*{a) Lad \(R = \{(1, 1), (2, 1), (2, 2), (2, 4), (3, 1), (3, 3), (3, 4), (4, 1), (4, 4)\}\). 
+Er \(R\) en partiel ordning?}
+
+\vspace{0.4em} % Tilføjer lidt mellemrum
+
+\subsubsection*{Løsning a)}
+
+For at relationen \(R\) skal være en partiell ordning, så skal den opfylde de her tre egenskaber:
+\begin{itemize}
+    \item \textbf{Refleksivitet:} \(\forall\) \(x\) i mængden skal \( (x, x) \) være i relationen.
+    \item \textbf{Antisymmetri:} Hvis \( (x, y) \) og \( (y, x) \) er i relationen, skal \(x = y\).
+    \item \textbf{Transitivitet:} Hvis \( (x, y) \) og \( (y, z) \) er i relationen, skal \( (x, z) \) også være i relationen.
+\end{itemize}
+
+Lad os finde ud af om relationen \(R\) gør det:
+
+\vspace{0.4em} % Tilføjer mellemrum
+
+\begin{itemize}
+    \item \textbf{Refleksivitet:} Alle elementer i mængden \(\{1, 2, 3, 4\}\) har et par \( (x, x) \) i relationen. For \(R\) har vi \( (1, 1), (2, 2), (3, 3), (4, 4) \), så \(R\) er refleksiv.
+    \item \textbf{Antisymmetri:} Vi ser på parene \( (x, y) \) og \( (y, x) \). Der findes ikke nogen tilfælde, hvor begge par er i relationen undtagen når \(x = y\), så antisymmetri er opfyldt.
+    \item \textbf{Transitivitet:} Vi ser på alle mulige par \( (x, y) \) og \( (y, z) \), og tjekker, om \( (x, z) \) også er i relationen. Det er korrekt for alle tilfælde, så \(R\) er transitiv.
+\end{itemize}
+
+\vspace{0.4em} % Tilføjer mellemrum
+
+Da refleksivitet, antisymmetri og transitivitet er opfyldt, så vil det sige, at relationen R er en partiell ordning.
+
+\vspace{0.4em} % Tilføjer mellemrum
+
+\subsection*{b) Lad \( S = \{(1, 2), (2, 3), (2, 4), (4, 2)\} \). Angiv den transitive lukning af \( S \).}
+
+\vspace{0.4em} % Tilføjer mellemrum
+
+\subsubsection*{Løsning b)}
+
+For at finde den transitive lukning af relationen \(S\), skal vi sikre, at hvis \( (x, y) \) og \( (y, z) \) er i relationen, så skal \( (x, z) \) også være i relationen. 
+
+Vi ser på parene i \(S\):
+\begin{itemize}
+    \item \( (1, 2) \) og \( (2, 3) \) giver \( (1, 3) \)
+    \item \( (1, 2) \) og \( (2, 4) \) giver \( (1, 4) \)
+    \item \( (2, 3) \) og \( (3, 4) \) giver \( (2, 4) \)
+\end{itemize}
+
+Så den transitive lukning af \(S\) er:
+
+\[
+S_{\text{transitiv}} = \{(1, 2), (2, 3), (2, 4), (4, 2), (1, 3), (1, 4)\}
+\]
+
+\vspace{0.4em} %  mellemrum
+
+\subsection*{c) Lad \( T = \{(1, 1), (1, 3), (2, 2), (2, 4),\(3, 1), (3, 3), (3, 2), (4, 4)\} \). Bemærk, at \( T \) er en ækvivalens-relation. Angiv \( T \)'s ækvivalens-klasser.}
+
+\vspace{0.4em} 
+
+\subsubsection*{Løsning c)}
+
+Da \(T\) er en ækvivalens-relation, opfylder den tre egenskaber:
+\begin{itemize}
+    \item \textbf{Refleksivitet:} \(\forall\) \(x\) i mængden er \( (x, x) \) i relationen.
+    \item \textbf{Symmetri:} Hvis \( (x, y) \) er i relationen, er \( (y, x) \) også i relationen.
+    \item \textbf{Transitivitet:} Hvis \( (x, y) \) og \( (y, z) \) er i relationen, er \( (x, z) \) også i relationen.
+\end{itemize}
+
+For at finde ækvivalens-klasserne, ser vi på de elementer, der er i relation med hinanden. Vi opdeler mængden \(\{1, 2, 3, 4\}\) i ækvivalens-klasser, hvor hvert element er i relation med de andre elementer i samme klasse:
+
+\begin{itemize}
+    \item For \(1\), har vi \( (1, 1), (1, 3), (3, 1), (3, 3) \), så \(1\) og \(3\) er ækvivalente. Ækvivalens-klassen for \(1\) (og \(3\)) er \(\{1, 3\}\).
+    \item For \(2\), har vi \( (2, 2), (2, 4), (4, 2), (3, 2) \), så \(2\) og \(4\) er ækvivalente. Ækvivalens-klassen for \(2\) (og \(4\)) er \(\{2, 4\}\).
+\end{itemize}
+
+Så de to ækvivalens-klasser er:
+\[
+T_{\text{ækvivalens-klasser}} = \{\{1, 3\}, \{2, 4\}\}
+\]
+
+\end{document}
