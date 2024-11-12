@@ -1,0 +1,250 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb}
+\usepackage{setspace}
+
+\title{Reeksamen 2015, 2012 (DM549)}
+\author{Shane Rio Phil Balancio Madsen, Sidra Hamad og Muzhda Alizai}
+\date{November 2024}
+
+\begin{document}
+
+\maketitle
+\section*{Opgave 1}
+I det følgende lader vi $U = \{1, 2, 3, \dots, 15\}$ være universet (universal set).
+
+Betragt de to mængder
+\[
+A = \{2n \mid n \in S\} \quad \text{og} \quad B = \{3n + 2 \mid n \in S\}
+\]
+hvor $S = \{1, 2, 3, 4\}$.
+
+Angiv samtlige elementer i hver af følgende mængder:
+
+\begin{itemize}
+    \item[a)] Mængden $A$: For $A = \{2n \mid n \in S\}$ beregner vi $2n$ for hver $n$ i $S$:
+    \begin{align*}
+        n = 1 &: 2 \cdot 1 = 2 \\
+        n = 2 &: 2 \cdot 2 = 4 \\
+        n = 3 &: 2 \cdot 3 = 6 \\
+        n = 4 &: 2 \cdot 4 = 8 \\
+    \end{align*}
+    Så $A = \{2, 4, 6, 8\}$.
+    
+    \item[b)] Mængden $B$: For $B = \{3n + 2 \mid n \in S\}$ beregner vi $3n + 2$ for hver $n$ i $S$:
+    \begin{align*}
+        n = 1 &: 3 \cdot 1 + 2 = 5 \\
+        n = 2 &: 3 \cdot 2 + 2 = 8 \\
+        n = 3 &: 3 \cdot 3 + 2 = 11 \\
+        n = 4 &: 3 \cdot 4 + 2 = 14 \\
+    \end{align*}
+    Så $B = \{5, 8, 11, 14\}$.
+    
+    \item[c)] Mængden $A \cap B$: $A \cap B$ er skæringsmængden af $A$ og $B$, dvs. de elementer, der er fælles for begge mængder:
+    \[
+    A = \{2, 4, 6, 8\}, \quad B = \{5, 8, 11, 14\}
+    \]
+    Det eneste fælles element er $8$, så $A \cap B = \{8\}$.
+    
+    \item[d)] Mængden $A \cup B$: $A \cup B$ er foreningsmængden af $A$ og $B$, dvs. alle elementer i enten $A$ eller $B$:
+    \[
+    A = \{2, 4, 6, 8\}, \quad B = \{5, 8, 11, 14\}
+    \]
+    Så $A \cup B = \{2, 4, 5, 6, 8, 11, 14\}$.
+    
+    \item[e)] Mængden $A - B$: $A - B$ er forskellen mellem $A$ og $B$, dvs. de elementer, der er i $A$ men ikke i $B$:
+    \[
+    A = \{2, 4, 6, 8\}, \quad B = \{5, 8, 11, 14\}
+    \]
+    Elementerne $2$, $4$ og $6$ er i $A$ men ikke i $B$, så $A - B = \{2, 4, 6\}$.
+    
+    \item[f)] Mængden $B - A$: $B - A$ er forskellen mellem $B$ og $A$, dvs. de elementer, der er i $B$ men ikke i $A$:
+    \[
+    B = \{5, 8, 11, 14\}, \quad A = \{2, 4, 6, 8\}
+    \]
+    Elementerne $5$, $11$ og $14$ er i $B$ men ikke i $A$, så $B - A = \{5, 11, 14\}$.
+\end{itemize}
+
+
+
+\setlength{\parskip}{0.8em} % Øger afstanden mellem afsnit 
+\setlength{\parindent}{0pt} % Fjerner indrykninger ved begyndelsen af et afsnit
+\onehalfspacing % Øger linjeafstanden en smule, men ikke dobbelt
+
+\section*{Opgave 3, 2015}
+
+\vspace{0.4em} % Tilføjer mellemrum
+
+\subsection*{a) Lad \(R = \{(1, 1), (2, 1), (2, 2), (2, 4), (3, 1), (3, 3), (3, 4), (4, 1), (4, 4)\}\). 
+Er \(R\) en partiel ordning?}
+
+\vspace{0.4em} % Tilføjer lidt mellemrum
+
+\subsubsection*{Løsning a)}
+
+For at relationen \(R\) skal være en partiell ordning, så skal den opfylde de her tre egenskaber:
+\begin{itemize}
+    \item \textbf{Refleksivitet:} \(\forall\) \(x\) i mængden skal \( (x, x) \) være i relationen.
+    \item \textbf{Antisymmetri:} Hvis \( (x, y) \) og \( (y, x) \) er i relationen, skal \(x = y\).
+    \item \textbf{Transitivitet:} Hvis \( (x, y) \) og \( (y, z) \) er i relationen, skal \( (x, z) \) også være i relationen.
+\end{itemize}
+
+Lad os finde ud af om relationen \(R\) gør det:
+
+\vspace{0.4em} % Tilføjer mellemrum
+
+\begin{itemize}
+    \item \textbf{Refleksivitet:} Alle elementer i mængden \(\{1, 2, 3, 4\}\) har et par \( (x, x) \) i relationen. For \(R\) har vi \( (1, 1), (2, 2), (3, 3), (4, 4) \), så \(R\) er refleksiv.
+    \item \textbf{Antisymmetri:} Vi ser på parene \( (x, y) \) og \( (y, x) \). Der findes ikke nogen tilfælde, hvor begge par er i relationen undtagen når \(x = y\), så antisymmetri er opfyldt.
+    \item \textbf{Transitivitet:} Vi ser på alle mulige par \( (x, y) \) og \( (y, z) \), og tjekker, om \( (x, z) \) også er i relationen. Det er korrekt for alle tilfælde, så \(R\) er transitiv.
+\end{itemize}
+
+\vspace{0.4em} % Tilføjer mellemrum
+
+Da refleksivitet, antisymmetri og transitivitet er opfyldt, så vil det sige, at relationen \( R \) er en partiell ordning.
+
+\vspace{0.4em} % Tilføjer mellemrum
+
+\subsection*{b) Lad \( S = \{(1, 2), (2, 3), (2, 4), (4, 2)\} \). Angiv den transitive lukning af \( S \).}
+
+\vspace{0.4em} % Tilføjer mellemrum
+
+\subsubsection*{Løsning b)}
+
+For at finde den transitive lukning af relationen \(S\), skal vi sikre, at hvis \( (x, y) \) og \( (y, z) \) er i relationen, så skal \( (x, z) \) også være i relationen. 
+
+Vi ser på parene i \(S\):
+\begin{itemize}
+    \item \( (1, 2) \) og \( (2, 3) \) giver \( (1, 3) \)
+    \item \( (1, 2) \) og \( (2, 4) \) giver \( (1, 4) \)
+    \item \( (2, 3) \) og \( (3, 4) \) giver \( (2, 4) \)
+\end{itemize}
+
+Så den transitive lukning af \(S\) er:
+
+\[S_{\text{transitiv}} = \{(1, 2), (2, 3), (2, 4), (4, 2), (1, 3), (1, 4)\}\]
+
+\vspace{0.4em} % Tilføjer mellemrum
+
+\subsection*{c) Lad \( T = \{(1, 1), (1, 3), (2, 2), (2, 4), (3, 1), (3, 3), (3, 2), (4, 4)\} \). Bemærk, at \( T \) er en ækvivalens-relation. Angiv \( T \)'s ækvivalens-klasser.}
+
+\vspace{0.4em} 
+
+\subsubsection*{Løsning c)}
+
+Da \(T\) er en ækvivalens-relation, opfylder den tre egenskaber:
+\begin{itemize}
+    \item \textbf{Refleksivitet:} \(\forall\) \(x\) i mængden er \( (x, x) \) i relationen.
+    \item \textbf{Symmetri:} Hvis \( (x, y) \) er i relationen, er \( (y, x) \) også i relationen.
+    \item \textbf{Transitivitet:} Hvis \( (x, y) \) og \( (y, z) \) er i relationen, er \( (x, z) \) også i relationen.
+\end{itemize}
+
+For at finde ækvivalens-klasserne, ser vi på de elementer, der er i relation med hinanden. Vi opdeler mængden \(\{1, 2, 3, 4\}\) i ækvivalens-klasser, hvor hvert element er i relation med de andre elementer i samme klasse:
+
+\begin{itemize}
+    \item For \(1\), har vi \( (1, 1), (1, 3), (3, 1), (3, 3) \), så \(1\) og \(3\) er ækvivalente. Ækvivalens-klassen for \(1\) (og \(3\)) er \(\{1, 3\}\).
+    \item For \(2\), har vi \( (2, 2), (2, 4), (3, 2), (4, 2) \), så \(2\) og \(4\) er ækvivalente. Ækvivalens-klassen for \(2\) (og \(4\)) er \(\{2, 4\}\).
+\end{itemize}
+
+Så de to ækvivalens-klasser er:
+\[T_{\text{ækvivalens-klasser}} = \{\{1, 3\}, \{2, 4\}\}\]
+
+
+\title{Reeksamen 2015 Opgave 2 (DM549)}
+
+\maketitle
+
+\section*{Opgave 2}
+
+\subsection*{a) Hvilke af følgende udsagn er sande?}
+
+\begin{enumerate}
+    \item \( \forall x \in \mathbb{N}: \exists y \in \mathbb{N}: x < y \)
+    \item \( \forall x \in \mathbb{N}: \exists! y \in \mathbb{N}: x < y \)
+    \item \( \exists y \in \mathbb{N}: \forall x \in \mathbb{N}: x < y \)
+\end{enumerate}
+
+\subsubsection*{Løsning a)}
+
+Lad os analysere hvert udsagn:
+
+\begin{enumerate}
+   \item I den første påstand, bliver der påstået at for enhver naturlig \(x\), vil man kunne finde et naturligt tal \(y\), sådan at \(x<y\). Påstanden er sand, fordi for enhver naturlig tal \(x\), kan vi vælge \(y = x + 1\), som altid vil være et naturligt tal og opfylde \(x < y\). Derfor er udsagnet sandt.
+   
+    \item Den anden påstand, påstår, at for enhver naturlig \(x\), findes der et entydigt \(y\), så det vil sige at \(x<y\). Påstanden er falsk, da det ikke er et krav, at \(y\) skal være entydigt. For eksempel, for \(x = 1\), kan både \(y = 2\) og \(y = 3\) være løsninger. Derfor er påstanden ikke sand.
+    
+   	
+    \item Den tredje påstand siger, at der findes et \(y\), sådan at for alle naturlige \(x\), gælder \(x < y\). Det er også en falsk påstand, fordi der ikke findes et ”sådant \(y\) ”, der er større end alle naturlige tal. Naturlige tal er uendelige, og derfor kan vi ikke finde et \(y\), der er større end alle \(x\). Derfor er påstanden falsk.
+
+\end{enumerate}
+
+Så den eneste sande påstand er den første.
+
+\subsection*{b) Angiv negeringen af udsagn 1 fra spørgsmål a)}
+
+Negeringen af udsagn 1 betyder, at vi skal negere udsagnet \( \forall x \in \mathbb{N}: \exists y \in \mathbb{N}: x < y \). For at negere dette udsagn, kan vi bruge De Morgan's love:
+
+\[\neg (\forall x \in \mathbb{N}: \exists y \in \mathbb{N}: x < y) \equiv \exists x \in \mathbb{N}: \forall y \in \mathbb{N}: x \geq y\]
+
+Så det betyder, at der findes et naturligt tal \(x\), som er større end eller lig med alle naturlige tal \(y\). Dog er det ikke muligt, da de naturlige tal er uendelige og ikke har et maksimum. Derfor er negationen af udsagnet et umuligt udsagn.
+
+\section{Reeksaman 2012 - Opgave 1}
+
+Betragt funktionerne $f : \mathbb{R} \to \mathbb{R}$ og $g : \mathbb{R} \to \mathbb{R}$ defineret ved
+\[f(x) = x^2 + x + 1 \quad \text{og} \quad g(x) = 2x - 2\]
+
+\begin{itemize}
+    \item[a)] Er $f$ en bijektion?
+    \item[b)] Har $f$ en invers funktion?
+    \item[c)] Angiv $f + g$.
+    \item[d)] Angiv $g \circ f$.
+\end{itemize}
+
+\subsection{Besvarelse:}
+\begin{itemize}
+    \item[a)] \textbf{Nej, $f$ er ikke en bijektion.}
+    
+    En funktion er en bijektion, hvis den både er injektiv og surjektiv. Vi ser på de to krav:
+    
+    \begin{itemize}
+        \item \textbf{Injektivitet:} $f(x) = x^2 + x + 1$ er en parabel, der åbner opad. Fordi den har en symmetriakse, kan to forskellige værdier af $x$ give det samme $f(x)$. Derfor er $f$ ikke injektiv.
+        \item \textbf{Surjektivitet:} Funktionen har en minimumsværdi, hvilket betyder, at den ikke kan tage alle værdier i $\mathbb{R}$. Dermed er $f$ heller ikke surjektiv.
+    \end{itemize}
+    
+    Da $f$ hverken er injektiv eller surjektiv, er den ikke en bijektion.
+\end{itemize}
+\vspace{1em}
+
+\begin{itemize}
+    \item[b)] \textbf{Nej, $f$ har ikke en invers funktion.}
+    
+    For at en funktion skal have en invers, skal den være bijektiv. Vi ser på de to krav:
+    
+    \begin{itemize}
+        \item \textbf{Injektivitet:} Som tidligere nævnt er $f(x) = x^2 + x + 1$ ikke injektiv, da to forskellige værdier af $x$ kan give samme $f(x)$. 
+        \item \textbf{Surjektivitet:} Funktionen er heller ikke surjektiv, fordi den ikke kan tage alle værdier i $\mathbb{R}$ (den har en minimumsværdi).
+    \end{itemize}
+    
+    Da $f$ ikke er bijektiv, har den derfor ikke en invers funktion.
+\end{itemize}
+\vspace{1em}
+
+\begin{itemize}
+    \item[c)] \textbf{Angiv $f + g$:}
+    
+    \[(f + g)(x) = f(x) + g(x)\]
+    \[ = (x^2 + x + 1) + (2x - 2)\]
+    \[ = x^2 + 3x - 1\]
+\end{itemize}
+\vspace{1em}
+
+\begin{itemize}
+    \item[d)] \textbf{Angiv $g \circ f$:}
+    
+    \[(g \circ f)(x) = g(f(x))\]
+    \[= g(x^2 + x + 1)\]
+    \[= 2(x^2 + x + 1) - 2\]
+    \[= 2x^2 + 2x + 2 - 2\]
+    \[= 2x^2 + 2x\]
+\end{itemize}
+
+\end{document}
