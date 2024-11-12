@@ -27,7 +27,6 @@ Lad os analysere hvert udsagn:
    \item I den første påstand, bliver der påstået at for enhver naturlig \(x\), vil man kunne finde et naturligt tal \(y\), sådan at \(x<y\). Påstanden er sand, fordi for enhver naturlig tal \(x\), kan vi vælge \(y = x + 1\), som altid vil være et naturligt tal og opfylde \(x < y\). Derfor er udsagnet sandt.
    
     \item Den anden påstand, påstår, at for enhver naturlig \(x\), findes der et entydigt \(y\), så det vil sige at \(x<y\). Påstanden er falsk, da det ikke er et krav, at \(y\) skal være entydigt. For eksempel, for \(x = 1\), kan både \(y = 2\) og \(y = 3\) være løsninger. Derfor er påstanden ikke sand.
-    
    	
     \item Den tredje påstand siger, at der findes et \(y\), sådan at for alle naturlige \(x\), gælder \(x < y\). Det er også en falsk påstand, fordi der ikke findes et ”sådant \(y\) ”, der er større end alle naturlige tal. Naturlige tal er uendelige, og derfor kan vi ikke finde et \(y\), der er større end alle \(x\). Derfor er påstanden falsk.
 
@@ -45,4 +44,4 @@ Negeringen af udsagn 1 betyder, at vi skal negere udsagnet \( \forall x \in \mat
 
 Så det betyder, at der findes et naturligt tal \(x\), som er større end eller lig med alle naturlige tal \(y\). Dog er det ikke muligt, da de naturlige tal er uendelige og ikke har et maksimum. Derfor er negationen af udsagnet et umuligt udsagn.
 
-\end{document}
+
